@@ -34,7 +34,7 @@ De:
    ```
     <script>
       $(document).ready(function(){
-        $(¿#nombredelatabla').DataTable();
+        $('#nombredelatabla').DataTable();
       } );
     </script>
    ```
