@@ -16,10 +16,10 @@ Un saludo por si encontraste esto por casualidad :)
 En caso de querer agregar algún DataTable, recomendadísimo que le quiten el >> colspan="2" << que está en la etiqueta <th></th> donde aparece "Action", es decir:
 
 De:
->   <th colspan="2">Action</th>
+   ```<th colspan="2">Action</th>```
    
 A:
->   <th>Action</th>
+   ```<th>Action</th>```
 
 Y verán que funciona
 
