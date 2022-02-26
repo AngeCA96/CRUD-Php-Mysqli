@@ -10,38 +10,38 @@ Me he dedicado a hacer otras cosas más que el desarrollo web, pero todavía me 
 pocas características más para hacerlo más dinámico de lo que ya es.
 
 Un saludo por si encontraste esto por casualidad :)
-__________________________________________
 
-AÑADIRÉ QUE...
------------------------
+
+## AÑADIRÉ QUE...
 En caso de querer agregar algún DataTable, recomendadísimo que le quiten el >> colspan="2" << que está en la etiqueta <th></th> donde aparece "Action", es decir:
 
-   <th colspan="2">Action</th>
-   <th>Action</th>
-__________________________________________
+De:
+   `<th colspan="2">Action</th>`
+   
+A:
+   `<th>Action</th>`
 
 Y verán que funciona
----------------
-OTRA COSA MÁS
+
+## OTRA COSA MÁS
 En dado caso de que también se requiera modificar la cantidad de registros que se muestren después de añadir el datatable, que en vez de 10, por defecto sean 5, se añada este fragmento de código
 
 De: 
-    <script>
+    `<script>
       $(document).ready(function(){
         $(¿#nombredelatabla').DataTable();
       } );
-    </script>
+    </script>`
 
 A:
-    <script>
+    `<script>
       $(document).ready(function(){
         $('#nombredelatabla').DataTable();
       } );
-  
       var table = $('#nombredelatabla').DataTable({
         pageLength: 5,
         lengthMenu: [[5,10,20,-1], [5,10,20, 'All']]
       });
-    </script>
+    </script>`
 
 Y con eso queda :D
