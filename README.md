@@ -12,18 +12,18 @@ pocas características más para hacerlo más dinámico de lo que ya es.
 Un saludo por si encontraste esto por casualidad :)
 
 
-## AÑADIRÉ QUE...
+### AÑADIRÉ QUE...
 En caso de querer agregar algún DataTable, recomendadísimo que le quiten el >> colspan="2" << que está en la etiqueta <th></th> donde aparece "Action", es decir:
 
 De:
-   `<th colspan="2">Action</th>`
+>   <th colspan="2">Action</th>
    
 A:
-   `<th>Action</th>`
+>   <th>Action</th>
 
 Y verán que funciona
 
-## OTRA COSA MÁS
+### OTRA COSA MÁS
 En dado caso de que también se requiera modificar la cantidad de registros que se muestren después de añadir el datatable, que en vez de 10, por defecto sean 5, se añada este fragmento de código
 
 De: 
