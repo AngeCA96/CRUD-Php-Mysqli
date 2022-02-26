@@ -27,21 +27,21 @@ Y verán que funciona
 En dado caso de que también se requiera modificar la cantidad de registros que se muestren después de añadir el datatable, que en vez de 10, por defecto sean 5, se añada este fragmento de código
 
 De: 
-    `<script>
-      $(document).ready(function(){
-        $(¿#nombredelatabla').DataTable();
-      } );
-    </script>`
+    `<script>`
+      `$(document).ready(function(){`
+        `$(¿#nombredelatabla').DataTable();`
+      `} );`
+    `</script>`
 
 A:
-    `<script>
-      $(document).ready(function(){
-        $('#nombredelatabla').DataTable();
-      } );
-      var table = $('#nombredelatabla').DataTable({
-        pageLength: 5,
-        lengthMenu: [[5,10,20,-1], [5,10,20, 'All']]
-      });
-    </script>`
+    `<script>`
+      `$(document).ready(function(){`
+        `$('#nombredelatabla').DataTable();`
+      `} );`
+      `var table = $('#nombredelatabla').DataTable({`
+        `pageLength: 5,`
+        `lengthMenu: [[5,10,20,-1], [5,10,20, 'All']]`
+      `});`
+    `</script>`
 
 Y con eso queda :D
